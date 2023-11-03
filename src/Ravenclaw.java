@@ -14,9 +14,9 @@ public class Ravenclaw extends Hogwarts{
 
     public void comparison(Ravenclaw ravenclaw){
         if (smart + witty + wise + fullOfCreativity > ravenclaw.getSmart()  + ravenclaw.getWitty() + ravenclaw.getWise() + ravenclaw.getFullOfCreativity()){
-            System.out.println(name + " сильнее " + ravenclaw.getName());
+            System.out.println(getName() + " сильнее " + ravenclaw.getName());
         }else {
-            System.out.println(ravenclaw.getName() + " сильнее " + name);
+            System.out.println(ravenclaw.getName() + " сильнее " + getName());
 
         }
     }
@@ -44,9 +44,7 @@ public class Ravenclaw extends Hogwarts{
                 ", witty=" + witty +
                 ", wise=" + wise +
                 ", fullOfCreativity=" + fullOfCreativity +
-                ", name='" + name + '\'' +
-                ", magicalTransgression=" + magicalTransgression +
-                ", powerOfMagic=" + powerOfMagic +
+                ", name='" + super.toString() +
                 '}';
     }
 }

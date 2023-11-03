@@ -15,9 +15,9 @@ public class Slytherin extends Hogwarts {
     }
     public void comparison(Slytherin slytherin){
         if (cunning + determination + ambition + resourcefulness + thirstForPower > slytherin.getCunning()  + slytherin.getDetermination() + slytherin.getAmbition() + slytherin.getResourcefulness() + slytherin.getThirstForPower()){
-            System.out.println(name + " сильнее " + slytherin.getName());
+            System.out.println(getName() + " сильнее " + slytherin.getName());
         }else {
-            System.out.println(slytherin.getName() + " сильнее " + name);
+            System.out.println(slytherin.getName() + " сильнее " + getName());
 
         }
     }
@@ -50,9 +50,7 @@ public class Slytherin extends Hogwarts {
                 ", ambition=" + ambition +
                 ", resourcefulness=" + resourcefulness +
                 ", thirstForPower=" + thirstForPower +
-                ", name='" + name + '\'' +
-                ", magicalTransgression=" + magicalTransgression +
-                ", powerOfMagic=" + powerOfMagic +
+                ", name='" + super.toString() +
                 '}';
     }
 
